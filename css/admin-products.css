@@ -1,0 +1,60 @@
+.add-products {
+  margin-top: 12rem;
+}
+.add-products form {
+  margin: auto;
+  max-width: 100rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.add-products form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.add-products form .flex .wrap-inputBox {
+  flex: 1 1 32rem;
+}
+.add-products form .flex .wrap-inputBox .inputBox {
+  margin: 1rem 0;
+}
+.add-products form .flex .wrap-inputBox .inputBox select,
+.add-products form .flex .wrap-inputBox .inputBox input,
+.add-products form .flex .wrap-inputBox .inputBox option {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #707070;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+}
+.add-products form .flex .wrap-inputBox .inputBox select::placeholder,
+.add-products form .flex .wrap-inputBox .inputBox input::placeholder,
+.add-products form .flex .wrap-inputBox .inputBox option::placeholder {
+  font-size: 1.4rem;
+}
+.add-products form .flex .wrap-inputBox .inputBox select:focus,
+.add-products form .flex .wrap-inputBox .inputBox input:focus,
+.add-products form .flex .wrap-inputBox .inputBox option:focus {
+  border-color: var(--green);
+}
+.add-products form .flex .textarea {
+  flex: 1 1 32rem;
+}
+.add-products form .flex .textarea textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 16px;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 1rem;
+}
+.add-products form .flex .textarea textarea::placeholder {
+  font-size: 1.4rem;
+}
+.add-products form .btn {
+  background: var(--green);
+}
+.add-products form .btn:hover {
+  background: var(--orange);
+}/*# sourceMappingURL=admin-products.css.map */

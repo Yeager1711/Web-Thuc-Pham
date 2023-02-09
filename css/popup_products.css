@@ -1,0 +1,166 @@
+.banner {
+  padding: 1.5rem 0;
+  background-image: url(//bizweb.dktcdn.net/100/431/449/themes/877121/assets/bg-breadcrumb.jpg?1663571844727);
+  margin-bottom: 1rem;
+  height: 20rem;
+  background-position: left right;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+.banner .title {
+  font-size: 2.7rem;
+  margin-top: 2rem;
+  font-weight: var(--font-semi-bold);
+}
+.banner .title_cart {
+  font-size: 1.9rem;
+  margin: 5rem -7rem 1rem 0rem;
+  font-weight: var(--font-semi-bold);
+}
+.banner .content-links a {
+  font-size: 1.6rem;
+}
+.banner .content-links a:nth-child(1)::after, .banner .content-links a:nth-child(2)::after {
+  content: "/";
+  padding: 0 0.5rem;
+  color: #000;
+}
+.banner .content-links a:nth-child(1):hover, .banner .content-links a:nth-child(2):hover {
+  color: var(--orange);
+}
+.banner .content-links a:nth-child(3) {
+  font-weight: var(--font-semi-bold);
+}
+.banner .content-links_cart {
+  margin: 0rem 1rem 2rem 7rem;
+}
+.banner .content-links_cart a {
+  font-size: 1.4rem;
+}
+.banner .content-links_cart a:nth-child(1)::after, .banner .content-links_cart a:nth-child(2)::after {
+  content: "/";
+  padding: 0 0.5rem;
+  color: #000;
+}
+.banner .content-links_cart a:nth-child(1):hover, .banner .content-links_cart a:nth-child(2):hover {
+  color: var(--orange);
+}
+.banner .content-links_cart a:nth-child(3) {
+  font-weight: var(--font-semi-bold);
+}
+
+.popup-products {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.popup-products .box-container {
+  position: relative;
+  max-width: 100%;
+  width: 95%;
+  background: var(--white);
+  border-radius: 1rem;
+  margin: auto;
+}
+.popup-products .box-container .xmark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.popup-products .box-container .xmark i {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.popup-products .box-container .title {
+  font-size: 2.4rem;
+}
+.popup-products .box-container form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.popup-products .box-container form .product-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.popup-products .box-container form .product-info img {
+  flex: 1 1 32rem;
+  max-width: 30%;
+  width: 100%;
+  border-radius: 50%;
+}
+.popup-products .box-container form .product-info .desc-title {
+  flex: 1 1 42rem;
+  display: block;
+  width: 100%;
+  margin-left: 2rem;
+}
+.popup-products .box-container form .product-info .desc-title .name {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.popup-products .box-container form .product-info .desc-title .status {
+  margin: 0.7rem 0;
+  font-size: 1.7rem;
+}
+.popup-products .box-container form .product-info .desc-title .status span {
+  color: var(--green);
+}
+.popup-products .box-container form .product-info .desc-title .status span i:nth-child(1) {
+  color: var(--green);
+}
+.popup-products .box-container form .product-info .desc-title .status span i:nth-child(2) {
+  color: var(--red);
+}
+.popup-products .box-container form .product-info .desc-title .category {
+  font-size: 1.7rem;
+}
+.popup-products .box-container form .product-info .desc-title .details {
+  margin-top: 1rem;
+  max-width: 70rem;
+  font-size: 1.7rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.popup-products .box-container form .total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.popup-products .box-container form .total .old-price {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+.popup-products .box-container form .total .Qty_total {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #dbdbdb;
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  margin: 0 2rem;
+  padding: 0.5rem;
+}
+.popup-products .box-container form .total .Qty_total input {
+  text-align: center;
+  width: 5rem;
+  font-size: 1.7rem;
+}
+.popup-products .box-container form .total .Qty_total span {
+  font-size: 1.7rem;
+  align-items: center;
+  margin-left: 1.2rem;
+}
+.popup-products .box-container form .total .add-to-cart {
+  margin-top: 1rem;
+}
+.popup-products .box-container form .total .add-to-cart .btn {
+  margin: 1rem 0;
+}/*# sourceMappingURL=popup_products.css.map */

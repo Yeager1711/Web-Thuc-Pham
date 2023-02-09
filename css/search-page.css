@@ -1,0 +1,122 @@
+.banner {
+  padding: 1.5rem 0;
+  background-image: url(//bizweb.dktcdn.net/100/431/449/themes/877121/assets/bg-breadcrumb.jpg?1663571844727);
+  margin-bottom: 1rem;
+  height: 20rem;
+  background-position: left right;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+.banner .title {
+  font-size: 2.7rem;
+  margin-top: 2rem;
+  font-weight: var(--font-semi-bold);
+}
+.banner .title_cart {
+  font-size: 1.9rem;
+  margin: 5rem -7rem 1rem 0rem;
+  font-weight: var(--font-semi-bold);
+}
+.banner .content-links a {
+  font-size: 1.6rem;
+}
+.banner .content-links a:nth-child(1)::after, .banner .content-links a:nth-child(2)::after {
+  content: "/";
+  padding: 0 0.5rem;
+  color: #000;
+}
+.banner .content-links a:nth-child(1):hover, .banner .content-links a:nth-child(2):hover {
+  color: var(--orange);
+}
+.banner .content-links a:nth-child(3) {
+  font-weight: var(--font-semi-bold);
+}
+.banner .content-links_cart {
+  margin: 0rem 1rem 2rem 7rem;
+}
+.banner .content-links_cart a {
+  font-size: 1.4rem;
+}
+.banner .content-links_cart a:nth-child(1)::after, .banner .content-links_cart a:nth-child(2)::after {
+  content: "/";
+  padding: 0 0.5rem;
+  color: #000;
+}
+.banner .content-links_cart a:nth-child(1):hover, .banner .content-links_cart a:nth-child(2):hover {
+  color: var(--orange);
+}
+.banner .content-links_cart a:nth-child(3) {
+  font-weight: var(--font-semi-bold);
+}
+
+.search-form {
+  padding: 2rem auto;
+}
+.search-form form {
+  margin: auto;
+  max-width: 70rem;
+  height: 4.5rem;
+  border: 0.1rem solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+.search-form form .box {
+  width: 90%;
+  font-size: 16px;
+}
+.search-form form .box::placeholder {
+  font-size: 1.5rem;
+}
+.search-form form .btn-search {
+  padding: 0.5rem 2rem;
+  background: var(--bg-header);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
+}
+.search-form form .btn-search:hover {
+  cursor: pointer;
+}
+
+.search-products {
+  padding: 3rem auto;
+}
+.search-products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.5rem;
+}
+.search-products .box-container .box {
+  border: 0.15rem solid #dbdbdb;
+  border-radius: 0.5rem;
+}
+.search-products .box-container .box .image-boxSearch {
+  max-width: 100%;
+  margin: auto;
+  padding: 1.5rem;
+}
+.search-products .box-container .box .image-boxSearch img {
+  object-fit: cover;
+  height: 10rem;
+  width: 100%;
+}
+.search-products .box-container .box .desc-product h2 {
+  text-align: center;
+  text-transform: none;
+  font-size: 1.7rem;
+  font-weight: 450;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.search-products .box-container .box .desc-product .price {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  color: var(--green);
+}/*# sourceMappingURL=search-page.css.map */

@@ -1,0 +1,241 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-header);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 7%;
+  z-index: 1 !important;
+}
+.header::after {
+  content: "";
+  background: url(//bizweb.dktcdn.net/100/431/449/themes/877121/assets/bg-after-header.png?1663571844727) no-repeat top center;
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  left: 11%;
+  transform: translate(-50%);
+  bottom: -47px;
+  z-index: 9;
+}
+.header .logo {
+  font-size: 1.7rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--White);
+}
+.header .logo span {
+  color: var(--white);
+}
+.header .navbar {
+  position: relative;
+}
+.header .navbar #marker {
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 0;
+  height: 0.4rem;
+  content: "";
+  background: var(--green);
+}
+.header .navbar a {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  color: var(--white);
+}
+.header .navbar a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+.header .icons #menu-btn,
+.header .icons #users-btn,
+.header .icons #cart-btn {
+  padding: 0.6rem;
+  font-size: 2rem;
+}
+.header .icons #menu-btn:nth-child(1),
+.header .icons #users-btn:nth-child(1),
+.header .icons #cart-btn:nth-child(1) {
+  display: none;
+}
+.header .icons #menu-btn:nth-child(2), .header .icons #menu-btn:nth-child(3),
+.header .icons #users-btn:nth-child(2),
+.header .icons #users-btn:nth-child(3),
+.header .icons #cart-btn:nth-child(2),
+.header .icons #cart-btn:nth-child(3) {
+  margin-left: 1rem;
+}
+.header .icons #menu-btn:hover,
+.header .icons #users-btn:hover,
+.header .icons #cart-btn:hover {
+  cursor: pointer;
+}
+.header .icons #users-btn img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.header .profile {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--white);
+  width: 28rem;
+  display: none;
+}
+.header .profile.open {
+  display: block;
+}
+.header .profile .profile-title {
+  display: flex;
+  align-items: center;
+}
+.header .profile a i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.banner-section {
+  position: relative;
+}
+.banner-section .image-banner img {
+  margin-top: 3rem;
+  width: 100%;
+  height: 50%;
+  background-position: center;
+}
+.banner-section .info-contactAdmin {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+}
+.banner-section .info-contactAdmin .profile-titleAdmin {
+  display: flex;
+  align-items: center;
+}
+.banner-section .info-contactAdmin .profile-titleAdmin img {
+  max-width: 15rem;
+  width: 100%;
+  border-radius: 50%;
+  border: 0.2rem solid;
+}
+.banner-section .info-contactAdmin .profile-titleAdmin .desc .desc-name {
+  font-size: 3.5rem;
+  margin-top: 7rem;
+  padding: 0 2rem;
+  font-weight: var(--font-semi-bold);
+}
+.banner-section .info-contactAdmin .profile-titleAdmin .desc span {
+  display: flex;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+}
+.banner-section .info-contactAdmin .profile-titleAdmin .desc span p {
+  margin-left: 0.5rem;
+  color: var(--bg-header);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .header .navbar {
+    border-top: var(--border);
+    border-bottom: var(--border);
+    background-color: var(--white);
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    text-align: center;
+    display: block;
+    margin: 2rem;
+    color: var(--black);
+    z-index: 99999 !important;
+  }
+  .header .icons #menu-btn,
+.header .icons #users-btn {
+    padding: 0.6rem;
+    font-size: 2rem;
+  }
+  .header .icons #menu-btn:nth-child(1),
+.header .icons #users-btn:nth-child(1) {
+    display: inline-block;
+  }
+  .header .icons #menu-btn:nth-child(2),
+.header .icons #users-btn:nth-child(2) {
+    margin-left: 1rem;
+  }
+  .header .icons #menu-btn:hover,
+.header .icons #users-btn:hover {
+    cursor: pointer;
+  }
+  .banner-section .info-contactAdmin {
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+  }
+  .banner-section .info-contactAdmin .profile-title img {
+    max-width: 15rem;
+    width: 100%;
+    border-radius: 50%;
+    border: 0.2rem solid;
+  }
+}
+@media (max-width: 550px) {
+  .banner-section .info-contactAdmin {
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+  }
+  .banner-section .info-contactAdmin .profile-title img {
+    max-width: 15rem;
+    width: 100%;
+    border-radius: 50%;
+    border: 0.2rem solid;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=admin_header.css.map */

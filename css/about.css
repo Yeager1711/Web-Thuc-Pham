@@ -1,0 +1,23 @@
+.about-detail h3 {
+  font-size: 2.2rem;
+}
+.about-detail .content-container {
+  max-width: 100%;
+}
+.about-detail .content-container span {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: var(--font-semi-bold);
+  padding: 0.5rem 0;
+}
+.about-detail .content-container span p {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
+.about-detail .content-container .flex-text p {
+  font-size: 1.4rem;
+  margin-left: 0.3rem;
+  font-weight: normal;
+}/*# sourceMappingURL=about.css.map */

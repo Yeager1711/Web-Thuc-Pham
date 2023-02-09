@@ -1,0 +1,40 @@
+.user-accounts{
+    margin-top: 12rem;
+    
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+
+        .box {
+            width: 100%;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            border-radius: .5rem;
+            
+            img{
+                justify-content: center;
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                margin: auto;
+                overflow: hidden;
+                border: .5rem solid #46ce7e;
+
+                
+            }
+
+            p{
+                text-align: left;
+                font-size: 1.6rem;
+                padding: .5rem 0;
+                margin-bottom: .5rem;
+                color: var(--green);
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.products-detail h3 {
+  font-size: 2.2rem;
+  display: none;
+}
+.products-detail .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.products-detail .box-container .box {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.products-detail .box-container .box .image-products img {
+  max-width: 100%;
+  height: 19rem;
+}
+.products-detail .box-container .box .content {
+  width: 100%;
+}
+.products-detail .box-container .box .content .wrap-info {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+.products-detail .box-container .box .content .wrap-info h2 {
+  text-transform: none;
+  font-size: 1.7rem;
+  font-weight: 450;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.products-detail .box-container .box .content .wrap-info .price {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+.products-detail .box-container .box .content .wrap-info .price span {
+  color: var(--green);
+}
+.products-detail .box-container .box .content .btn-add {
+  display: flex;
+}
+.products-detail .box-container .box .content .btn-add .btn-addCart {
+  margin: 0.5rem auto;
+}
+.products-detail .listPage {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+}
+.products-detail .listPage li {
+  background: #dbdbdb;
+  padding: 1rem 1.5rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.products-detail .listPage li.active {
+  color: var(--white);
+  background: var(--green);
+}/*# sourceMappingURL=products.css.map */

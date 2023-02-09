@@ -1,0 +1,76 @@
+.home-wrapper .showProducts {
+  margin-top: 12rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  background: #fff;
+  height: 54rem;
+  overflow: auto;
+  padding: 2rem;
+}
+.home-wrapper .showProducts .wrap-container .box-container {
+  flex: 1 1 40rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 2rem;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title {
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products {
+  position: relative;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products img {
+  max-width: 10rem;
+  border-radius: 5rem;
+  border: 0.1rem solid #888;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products .btn-changeImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products .btn-changeImage input {
+  display: none;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products .btn-changeImage label {
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  background: #e4e6eb;
+  box-shadow: 0 0.5rem 1rem rgab(0, 0, 0, 0.4);
+  border-radius: 5rem;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .flex-title .image-products .btn-changeImage label:hover {
+  cursor: pointer;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .content {
+  padding: 1.5rem 0;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .content .inputBox {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .content .inputBox span {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--green);
+}
+.home-wrapper .showProducts .wrap-container .box-container .box .content .inputBox input,
+.home-wrapper .showProducts .wrap-container .box-container .box .content .inputBox select {
+  width: 50%;
+  margin: 0 0 1rem 0.7rem;
+  border: 0.1rem dashed #777;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}/*# sourceMappingURL=admin_page.css.map */
